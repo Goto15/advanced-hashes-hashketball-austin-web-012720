@@ -144,8 +144,8 @@ def num_points_scored(player_name)
 end
 
 def shoe_size(player_name)
-  size = 0
   players_array = game_hash[:home][:players] | game_hash[:away][:players]
+  size = 0
   
   for each in players_array
     if each[:player_name] == player_name
