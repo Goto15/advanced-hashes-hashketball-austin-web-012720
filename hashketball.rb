@@ -132,9 +132,9 @@ def num_points_scored(player_name)
   points_scored = 0
   
   #The | operator joins both away and home players into one array
-  players_array = game_hash[:home][:players] | game_hash[:away][:players]
+  player_array = game_hash[:home][:players] | game_hash[:away][:players]
   
-  for each in players_array
+  for each in player_array
     if each[:player_name] == player_name
       points_scored = each[:points]
     end
